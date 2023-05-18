@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card__header">
+          <h1 id="title" class="mb-2">Job Application</h1>
+          <p id="description">
+            Kindly fill out the following job application form with the required
+            information.
+          </p>
+        </div>
+        <form id="survey-form">
+          <div class="card__body">
+            <fieldset class="mb-5">
+              <legend><h2 class="mb-2">Personal Information</h2></legend>
+              <div class="two-cols mb-2">
+                <label id="name-label" for="name">
+                  First Name
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="John"
+                    required
+                  />
+                </label>
+                <label id="last-name-label" for="last-name">
+                  Last Name
+                  <input
+                    id="last-name"
+                    name="last-name"
+                    type="text"
+                    placeholder="Doe"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="two-cols mb-2">
+                <label id="email-label" for="email">
+                  Email
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="jdoe@example.com"
+                    required
+                  />
+                </label>
+                <label id="phone-number-label" for="phone-number">
+                  Phone No.
+                  <input
+                    id="phone-number"
+                    name="phone-number"
+                    type="tel"
+                    placeholder="09876543210"
+                    pattern="[0-9]{4}[0-9]{3}[0-9]{4}"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="two-cols mb-2">
+                <label id="number-label" for="number">
+                  Age (optional)
+                  <input
+                    id="number"
+                    name="age"
+                    type="number"
+                    min="18"
+                    max="120"
+                    placeholder="18"
+                  />
+                </label>
+                <label for="dropdown">
+                  Job position you're applying for
+                  <select id="dropdown" name="position">
+                    <option value="">(select one)</option>
+                    <option value="1">Backend Web Developer</option>
+                    <option value="2">Frontend Web Developer</option>
+                    <option value="3">Mobile Developer</option>
+                  </select>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="mb-5">
+              <legend><h2 class="mb-2">Requirements</h2></legend>
+              <div class="mb-2">
+                <label for="profile-picture">
+                  <div class="mb-2">Upload resume</div>
+                  <input
+                    class="w-100 mb-2"
+                    id="profile-picture"
+                    type="file"
+                    name="file"
+                  />
+                </label>
+              </div>
+              <div class="mb2">
+                <label for="bio"
+                  >Cover letter
+                  <textarea id="bio" name="bio" rows="4"></textarea>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="mb-5">
+              <legend>
+                <h2 class="mb-2">What is your current employment status?</h2>
+              </legend>
+              <div class="grid">
+                <label for="employed">
+                  <input
+                    id="employed"
+                    type="radio"
+                    name="employment-status"
+                    value="employed"
+                  />
+                  Employed
+                </label>
+                <label for="self-employed">
+                  <input
+                    id="self-employed"
+                    type="radio"
+                    name="employment-status"
+                    value="self-employed"
+                  />
+                  Self-Employed
+                </label>
+                <label for="unemployed">
+                  <input
+                    id="unemployed"
+                    type="radio"
+                    name="employment-status"
+                    value="unemployed"
+                  />
+                  Unemployed
+                </label>
+                <label for="student">
+                  <input
+                    id="student"
+                    type="radio"
+                    name="employment-status"
+                    value="student"
+                  />
+                  Student
+                </label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>
+                <h2 class="mb-2">Where have you seen this job opening?</h2>
+              </legend>
+              <div class="grid">
+                <label for="facebook">
+                  <input
+                    id="facebook"
+                    type="checkbox"
+                    name="referrer"
+                    value="facebook"
+                  />
+                  Facebook
+                </label>
+                <label for="indeed">
+                  <input
+                    id="indeed"
+                    type="checkbox"
+                    name="referrer"
+                    value="indeed"
+                  />
+                  Indeed
+                </label>
+                <label for="jobstreet">
+                  <input
+                    id="jobstreet"
+                    type="checkbox"
+                    name="referrer"
+                    value="jobstreet"
+                  />
+                  Jobstreet
+                </label>
+                <label for="linkedin">
+                  <input
+                    id="linkedin"
+                    type="checkbox"
+                    name="referrer"
+                    value="linkedin"
+                  />
+                  LinkedIn
+                </label>
+                <label for="tiktok">
+                  <input
+                    id="tiktok"
+                    type="checkbox"
+                    name="referrer"
+                    value="tiktok"
+                  />
+                  TikTok
+                </label>
+                <label for="others">
+                  <input
+                    id="others"
+                    type="checkbox"
+                    name="referrer"
+                    value="others"
+                  />
+                  Others
+                </label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="card__footer">
+            <input class="button" id="submit" type="submit" value="Apply" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
