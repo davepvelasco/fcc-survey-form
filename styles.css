@@ -21,14 +21,9 @@ body {
 /* Styles */
 
 body {
-  background-color: rgb(241 245 249);
-  color: rgb(51 65 85);
+  background-color: #f1f4f9;
+  color: #001d3b;
   font-family: "Poppins", sans-serif;
-}
-
-h1,
-h2 {
-  color: rgba(17, 23, 38, 255);
 }
 
 h1 {
@@ -51,6 +46,7 @@ h2 {
 
 .card {
   background-color: #fff;
+  border: 1px solid #c9cfde;
   width: clamp(580px, 60%, 900px);
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
@@ -68,8 +64,9 @@ h2 {
 
 .card__footer {
   padding: 2rem 3rem;
-  background-color: rgba(248, 250, 253, 255);
-  border-radius: 0 16px 16px;
+  background-color: #f7f9ff;
+  border-top: 1px solid #c9cfde;
+  border-radius: 0 0 16px 16px;
 }
 
 fieldset {
@@ -82,18 +79,18 @@ input[type="tel"],
 input[type="number"],
 select,
 textarea {
-  background-color: rgba(241, 244, 249, 255);
-  border: 0;
+  background-color: #f1f4f9;
+  border: 1px solid #c9cfde;
   border-radius: 8px;
   padding: 0.75rem;
   width: 100%;
 }
 
 input::file-selector-button {
-  background-color: rgba(241, 244, 249, 255);
+  background-color: #f1f4f9;
   font-weight: 600;
   padding: 0.75em;
-  border: 0;
+  border: 1px solid #c9cfde;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -115,11 +112,18 @@ textarea {
 .button {
   color: #fff;
   font-weight: 600;
-  background-color: rgba(15, 167, 233, 255);
+  background-color: #005aa3;
   border: 0;
   border-radius: 8px;
   padding: 1em 1.5em;
   cursor: pointer;
+}
+
+.button:focus {
+  color: #001d3b;
+  outline: none !important;
+  background-color: #fff;
+  border: 3px solid #000;
 }
 
 /* Layout */
